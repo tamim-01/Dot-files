@@ -5,8 +5,8 @@ fi
 
 # Path to Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-#ZSH_THEME="powerlevel10k/powerlevel10k"
-#zstyle ':omz:update' mode auto      # update automatically without ask
+ZSH_THEME="powerlevel10k/powerlevel10k"
+zstyle ':omz:update' mode auto      # update automatically without ask
 
 COMPLETION_WAITING_DOTS="%F{green}waiting...%f"
 
@@ -21,12 +21,10 @@ alias ...="cd ../.."
 # ls replacement
 alias ls="eza"
 alias ll="eza -la"
-alias tree="eza --true
-
+alias tree="eza --true"
 
 # Custom prompt
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 
 # History search with arrow keys
 bindkey '^[[A' history-search-backward
